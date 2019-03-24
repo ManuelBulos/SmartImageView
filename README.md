@@ -23,6 +23,8 @@ pod 'SmartImageView'
 
 ## Usage
 ```swift
+import UIKit
+
 class ViewController: UIViewController {
 
     // Works programmatically or using the interface builder
@@ -35,6 +37,47 @@ class ViewController: UIViewController {
         smartImageView.delegate = self
         smartImageView.searchForFaces(on: image)
     }
+}
+```
+
+## SmartImageViewDelegate
+```swift
+import UIKit
+
+@available(iOS 11.0, *)
+@objc public protocol SmartImageViewDelegate: class {
+
+    /// Asks the delegate for a view object to display in every face found.
+    @objc func smartImageView(_ smartImageView: SmartImageView, viewForFaceIn frame: CGRect) -> UIView
+
+    /// Sent after SmartImageView finishes searching for faces.
+    @objc optional func smartImageView(_ smartImageView: SmartImageView, numberOfFacesFound: Int)
+
+    /// Sent if an error was found at any time during the task.
+    @objc optional func smartImageView(_ smartImageView: SmartImageView, encountered error: Error)
+
+}
+```
+
+## SmartImageViewDelegate Usage
+```swift
+extension ViewController: SmartImageViewDelegate {
+
+    func smartImageView(_ smartImageView: SmartImageView, numberOfFacesFound: Int) {
+        print("Found: \(numberOfFacesFound) face(s)")
+    }
+
+    func smartImageView(_ smartImageView: SmartImageView, viewForFaceIn frame: CGRect) -> UIView {
+        let customView = UIView(frame: frame)
+        customView.backgroundColor = .yellow
+        customView.alpha = 0.5
+        return customView
+    }
+
+    func smartImageView(_ smartImageView: SmartImageView, encountered error: Error) {
+        print(error.localizedDescription)
+    }
+
 }
 ```
 
