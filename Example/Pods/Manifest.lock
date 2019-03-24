@@ -1,5 +1,5 @@
 PODS:
-  - SmartImageView (0.1.0)
+  - SmartImageView (0.1.1)
 
 DEPENDENCIES:
   - SmartImageView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SmartImageView: b59f742e86ad3b19e0ac4314af74ea939786c5f2
+  SmartImageView: d90c495f81858b83e2d5d0e082da3f99bd7210b3
 
 PODFILE CHECKSUM: a80fe468da0b352ef20c5aa25009b25e7a11f5d6
 
