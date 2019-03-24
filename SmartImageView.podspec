@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmartImageView'
-  s.version          = '0.1.1'
+  s.version          = '0.1.3'
   s.summary          = 'UIImageView that detects faces and adds custom views over them. Uses Vision API from Apple.'
 
 # This description is used to generate tags and improve search results.
