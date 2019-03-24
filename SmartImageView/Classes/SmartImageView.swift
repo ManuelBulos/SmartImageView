@@ -116,7 +116,7 @@ public class SmartImageView: UIImageView {
 
     private func handleFaceObservation(_ faceObservation: VNFaceObservation) {
         let frame = getFrameForBoundingBox(faceObservation.boundingBox)
-        guard let view = delegate?.smartImageView(self, viewForFaceIn: frame) else { return }
+        guard let view = delegate?.smartImageView?(self, viewForFaceIn: frame) else { return }
         insertSubview(view, aboveSubview: self)
     }
 
