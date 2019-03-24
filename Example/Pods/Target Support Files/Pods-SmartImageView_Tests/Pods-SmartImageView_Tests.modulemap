@@ -1,0 +1,6 @@
+framework module Pods_SmartImageView_Tests {
+  umbrella header "Pods-SmartImageView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

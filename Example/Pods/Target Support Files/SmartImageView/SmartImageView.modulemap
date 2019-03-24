@@ -1,0 +1,6 @@
+framework module SmartImageView {
+  umbrella header "SmartImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
