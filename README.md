@@ -21,6 +21,23 @@ it, simply add the following line to your Podfile:
 pod 'SmartImageView'
 ```
 
+## Usage
+```swift
+class ViewController: UIViewController {
+
+    // Works programmatically or using the interface builder
+    @IBOutlet weak var smartImageView: SmartImageView!
+    
+    fileprivate let image = UIImage(named: "Sample1")
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        smartImageView.delegate = self
+        smartImageView.searchForFaces(on: image)
+    }
+}
+```
+
 ## Author
 
 manuelbulos, manuelbulos@gmail.com
