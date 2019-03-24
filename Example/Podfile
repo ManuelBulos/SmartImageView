@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SmartImageView_Example' do
+  pod 'SmartImageView', :path => '../'
+
+  target 'SmartImageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
