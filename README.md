@@ -48,7 +48,7 @@ import UIKit
 @objc public protocol SmartImageViewDelegate: class {
 
     /// Asks the delegate for a view object to display in every face found.
-    @objc func smartImageView(_ smartImageView: SmartImageView, viewForFaceIn frame: CGRect) -> UIView
+    @objc optional func smartImageView(_ smartImageView: SmartImageView, viewForFaceIn frame: CGRect) -> UIView
 
     /// Sent after SmartImageView finishes searching for faces.
     @objc optional func smartImageView(_ smartImageView: SmartImageView, numberOfFacesFound: Int)
