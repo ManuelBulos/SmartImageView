@@ -6,10 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/SmartImageView.svg?style=flat)](https://cocoapods.org/pods/SmartImageView)
 
 ## Example
-
-![](gif.gif)
-
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![](gif.gif)
 
 ## Requirements
 iOS 11.0 *
