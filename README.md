@@ -8,7 +8,7 @@
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-<img src="https://giphy.com/gifs/swift-cocoapod-smartimageview-cI9xp60ulot7b5PRxO" width="40" height="40" />
+<img src="https://media.giphy.com/media/cI9xp60ulot7b5PRxO/giphy.gif" width="40" height="40" />
 
 ## Requirements
 iOS 11.0 *
