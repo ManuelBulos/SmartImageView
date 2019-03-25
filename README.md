@@ -8,7 +8,7 @@
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![Alt Text](http://www.giphy.com/gifs/cI9xp60ulot7b5PRxO)
+![](http://www.giphy.com/gifs/cI9xp60ulot7b5PRxO)
 
 ## Requirements
 iOS 11.0 *
